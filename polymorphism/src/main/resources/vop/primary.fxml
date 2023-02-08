@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="vop.PrimaryController">
+    <HBox>
+        <VBox>
+            <RadioButton fx:id="ellipseRadio" onAction="#shapeActionHandler">Ellipse</RadioButton>
+            <RadioButton fx:id="rectangleRadio" onAction="#shapeActionHandler">Rectangle</RadioButton>
+            <RadioButton fx:id="circleRadio" onAction="#shapeActionHandler">Circle</RadioButton>
+            <RadioButton fx:id="squareRadio" onAction="#shapeActionHandler">Square</RadioButton>
+        </VBox>
+        <VBox alignment="CENTER">
+            <HBox alignment="CENTER">
+                <TextField fx:id="t1"></TextField>
+                <TextField fx:id="t2"></TextField>
+            </HBox>
+            <Button onAction="#getInfoActionHandler">Get Info</Button>
+            <TextArea fx:id="textArea"></TextArea>
+        </VBox>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,36 @@
+@startuml Ciphers
+skinparam backgroundcolor transparent
+skinparam classAttributeIconSize 0
+
+interface CipherInterface {
+    ALPHABET : char[] = {'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F'
+            , 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'K', 'l', 'L', 'm', 'M'
+            , 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T'
+            , 'u', 'U', 'v', 'V', 'w', 'W', 'x', 'X', 'y', 'Y', 'z', 'Z'}
+    + encrypt(original : String) : String
+    + decrypt(original : String) : String
+}
+
+abstract class AbstractCipher
+{
+    # findCharIndex(ch : char) : int
+}
+
+class AtbashCipher
+{
+    + encrypt(original : String) : String
+    + decrypt(original : String) : String
+}
+
+class CaesarCipher
+{
+    - rotFactor : int
+    + CaesarCipher(rotFactor : int)
+    + encrypt(original : String) : String
+    + decrypt(original : String) : String
+}
+
+CipherInterface <|-- AbstractCipher
+AbstractCipher <|-- AtbashCipher
+AbstractCipher <|-- CaesarCipher
+@enduml

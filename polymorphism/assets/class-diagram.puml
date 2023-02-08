@@ -1,0 +1,52 @@
+@startuml Polymorphism
+skinparam backgroundcolor transparent
+skinparam classAttributeIconSize 0
+
+interface ShapeInterface {
+    pi : double = Math.PI
+    + getArea() : double
+    + getCircumference() : double
+}
+
+
+class AbstractShape {
+    toString() : String
+}
+
+class Rectangle {
+    # l1 : double
+    # l2 : double
+
+    Rectangle(l1 : double, l2 : double)
+    + getArea() : double
+    + getCircumference() : double
+}
+
+class Ellipse {
+    # r1 : double
+    # r2 : double
+    Ellipse(r1 : double, r2 : double)
+    + getArea() : double
+    + getCircumference() : double
+}
+
+class Square {
+    Square(length : double)
+}
+
+class Circle {
+    Circle(r : double)
+}
+
+class ShapeDriver {
+    main(args: String[]) : void
+}
+
+ShapeInterface <|-- AbstractShape
+AbstractShape <|-- Ellipse
+AbstractShape <|-- Rectangle
+Ellipse <|-- Circle
+Rectangle <|-- Square
+ShapeDriver *-> ShapeInterface : 0..* 
+
+@enduml

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="276.0" prefWidth="251.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop.PrimaryController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320">
+            <children>
+                <RadioButton fx:id="ellipseRadio" layoutX="27.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleRadio" selected="true" text="Ellipse">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="ShapeToggle" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="rectangleRadio" layoutX="27.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleRadio" text="Rectangle" toggleGroup="$ShapeToggle" />
+                <RadioButton fx:id="circleRadio" layoutX="27.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleRadio" text="Circle" toggleGroup="$ShapeToggle" />
+                <RadioButton fx:id="squereRadio" layoutX="26.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleRadio" text="Squere" toggleGroup="$ShapeToggle" />
+                <TextField fx:id="para1" layoutX="125.0" layoutY="32.0" prefHeight="25.0" prefWidth="39.0" />
+                <TextField fx:id="para2" layoutX="193.0" layoutY="32.0" prefHeight="25.0" prefWidth="39.0" />
+                <Button fx:id="infoButton" layoutX="151.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Get Info" />
+                <TextArea fx:id="resultArea" layoutX="101.0" layoutY="109.0" prefHeight="126.0" prefWidth="202.0" wrapText="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

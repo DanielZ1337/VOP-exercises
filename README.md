@@ -1,2 +1,2 @@
 # VOP exercises
-## Personal repository for advanced object-oriented programmering
+Personal repository for advanced object-oriented programmering

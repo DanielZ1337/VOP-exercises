@@ -1,0 +1,16 @@
+﻿/**
+ * HelloWorld Example for use during the VOP exam F15
+ * @author erso   Created on 15-05-2015, 10:19:06
+ */
+public class HelloWorld {
+
+    public HelloWorld() {
+        System.out.println("HelloWorld");
+    }
+
+
+    public static void main(String[] args) {
+        HelloWorld helloWorld = new HelloWorld();
+    }
+}
+

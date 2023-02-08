@@ -57,7 +57,7 @@ public class DanishIslandFileReader {
      */
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println(new File(".").getAbsolutePath());
-        DanishIslandFileReader fr = new DanishIslandFileReader("Islands punktum.txt");
+        DanishIslandFileReader fr = new DanishIslandFileReader("DanishIslandExercise/Islands punktum.txt");
         //DanishIslandFileReader fr = new DanishIslandFileReader("Islands komma.txt");
         fr.readFile();
 

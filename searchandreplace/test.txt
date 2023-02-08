@@ -1,0 +1,16 @@
+﻿/**
+ * test Example for use during the VOP exam F15
+ * @author erso   Created on 15-05-2015, 10:19:06
+ */
+public class test {
+
+    public test() {
+        System.out.println("test");
+    }
+
+
+    public static void main(String[] args) {
+        test helloWorld = new test();
+    }
+}
+

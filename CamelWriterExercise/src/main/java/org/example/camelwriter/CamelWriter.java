@@ -21,14 +21,14 @@ public class CamelWriter {
         // Benyt en Scanner til at læse inFile én linje ad gangen
         // Kald convert2camel med hver linje.
         Scanner scanner = new Scanner(inFile);
-        while(scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
             convert2camel(scanner.nextLine());
         }
     }
 
     private void convert2camel(String line) throws ArrayIndexOutOfBoundsException {
         String[] words = line.split(" ");
-        try{
+        try {
             for (int i = 0; i < words.length; i++) {
                 char[] chars = words[i].toCharArray();
                 if (i == 0) {
@@ -45,7 +45,7 @@ public class CamelWriter {
                 result += str;
             }
             System.out.println(result);
-        }catch (ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e) {
 
         }
         // Split line til et String[] af de enkelte ord i linjen
@@ -57,8 +57,12 @@ public class CamelWriter {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
-        CamelWriter cw = new CamelWriter("DryLips.txt");
+        CamelWriter cw = new CamelWriter("CamelWriterExercise/DryLips.txt");
         cw.readLines();
+        CamelWriter cw1 = new CamelWriter("CamelWriterExercise/MaryAnn.txt");
+        cw1.readLines();
+        CamelWriter cw2 = new CamelWriter("CamelWriterExercise/OhLand.txt");
+        cw2.readLines();
     }
 
 }

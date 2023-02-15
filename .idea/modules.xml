@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CamelWriterExercise/CamelWriterExercise.iml" filepath="$PROJECT_DIR$/CamelWriterExercise/CamelWriterExercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DanishIslandExercise/DanishIslandExercise.iml" filepath="$PROJECT_DIR$/DanishIslandExercise/DanishIslandExercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ciphers/Lesson1Exercise-Ciphers.iml" filepath="$PROJECT_DIR$/ciphers/Lesson1Exercise-Ciphers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/polymorphism/Lesson1Exercise-Polymorphism.iml" filepath="$PROJECT_DIR$/polymorphism/Lesson1Exercise-Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" filepath="$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" filepath="$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VOP-exercises.iml" filepath="$PROJECT_DIR$/.idea/VOP-exercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/searchandreplace/searchandreplace.iml" filepath="$PROJECT_DIR$/searchandreplace/searchandreplace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" filepath="$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" />
     </modules>
   </component>
 </project>

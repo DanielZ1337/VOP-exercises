@@ -57,11 +57,11 @@ public class CamelWriter {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
-        CamelWriter cw = new CamelWriter("CamelWriterExercise/DryLips.txt");
+        CamelWriter cw = new CamelWriter("Preparation Exercises/CamelWriterExercise/DryLips.txt");
         cw.readLines();
-        CamelWriter cw1 = new CamelWriter("CamelWriterExercise/MaryAnn.txt");
+        CamelWriter cw1 = new CamelWriter("Preparation Exercises/CamelWriterExercise/MaryAnn.txt");
         cw1.readLines();
-        CamelWriter cw2 = new CamelWriter("CamelWriterExercise/OhLand.txt");
+        CamelWriter cw2 = new CamelWriter("Preparation Exercises/CamelWriterExercise/OhLand.txt");
         cw2.readLines();
     }
 

@@ -2,19 +2,27 @@ package org.example.camelwriter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class CamelWriter {
 
-    private File inFile;
+    private final File inFile;
 
 
     public CamelWriter(String fName) {
         this.inFile = new File(fName);
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws FileNotFoundException {
+        CamelWriter cw = new CamelWriter("Preparation Exercises/CamelWriterExercise/DryLips.txt");
+        cw.readLines();
+        CamelWriter cw1 = new CamelWriter("Preparation Exercises/CamelWriterExercise/MaryAnn.txt");
+        cw1.readLines();
+        CamelWriter cw2 = new CamelWriter("Preparation Exercises/CamelWriterExercise/OhLand.txt");
+        cw2.readLines();
     }
 
     public void readLines() throws FileNotFoundException {
@@ -51,18 +59,6 @@ public class CamelWriter {
         // Split line til et String[] af de enkelte ord i linjen
         // Konverter 1. ord til små og resten til stort begyndelsesbogstav
         // Sammensæt ordene til ét langt ord og udskriv.
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) throws FileNotFoundException {
-        CamelWriter cw = new CamelWriter("Preparation Exercises/CamelWriterExercise/DryLips.txt");
-        cw.readLines();
-        CamelWriter cw1 = new CamelWriter("Preparation Exercises/CamelWriterExercise/MaryAnn.txt");
-        cw1.readLines();
-        CamelWriter cw2 = new CamelWriter("Preparation Exercises/CamelWriterExercise/OhLand.txt");
-        cw2.readLines();
     }
 
 }

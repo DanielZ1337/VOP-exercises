@@ -28,7 +28,7 @@ public class PrimaryController {
     }
 
     public void encryptMessage(ActionEvent event) {
-        if(toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(1)){
+        if (toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(1)) {
             String encrypted = new AtbashCipher().encrypt(message.getText());
             encryptedMsg.setText(encrypted);
         } else if (toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(0)) {
@@ -38,7 +38,7 @@ public class PrimaryController {
     }
 
     public void decryptMessage(ActionEvent event) {
-        if(toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(1)){
+        if (toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(1)) {
             String decrypted = new AtbashCipher().decrypt(encryptedMsg.getText());
             decryptedMsg.setText(decrypted);
         } else if (toggleGroup.getSelectedToggle() == toggleGroup.getToggles().get(0)) {

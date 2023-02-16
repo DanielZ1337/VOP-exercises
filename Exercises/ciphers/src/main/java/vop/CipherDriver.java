@@ -1,9 +1,8 @@
 package vop;
 
 /**
- *
- * @author erso 
- *  Udleveret driver klasse til opgave 2, VOP eksamen 10 juni 2016
+ * @author erso
+ * Udleveret driver klasse til opgave 2, VOP eksamen 10 juni 2016
  */
 public class CipherDriver {
 

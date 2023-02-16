@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author erso
  */
 public class ShapeDriver {
@@ -25,8 +24,8 @@ public class ShapeDriver {
         list.add(new Rectangle(3.4, 4.4));
         list.add(new Ellipse(3.4, 2.7));
         list.add(new Square(3.4));
-        
+
         System.out.println("Shapes: " + list);
     }
-    
+
 }

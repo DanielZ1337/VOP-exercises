@@ -2,11 +2,11 @@ package org.example.danishisland;
 
 public class DanishIsland {
 
-    private String name;
-    private double circumference;
-    private double area;
-    private int addresses;
-    private int addrPerKm2;
+    private final String name;
+    private final double circumference;
+    private final double area;
+    private final int addresses;
+    private final int addrPerKm2;
 
     public DanishIsland(String name, double circumference, double area,
                         int addresses, int addrPerKm2) {
@@ -40,18 +40,17 @@ public class DanishIsland {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append(name);
-        builder.append("\t");
-        builder.append(circumference);
-        builder.append("\t");
-        builder.append(area);
-        builder.append("\t");
-        builder.append(addresses);
-        builder.append("\t");
-        builder.append(addrPerKm2);
-        builder.append("\n");
-        return builder.toString();
+        String builder = name +
+                "\t" +
+                circumference +
+                "\t" +
+                area +
+                "\t" +
+                addresses +
+                "\t" +
+                addrPerKm2 +
+                "\n";
+        return builder;
     }
 
 }

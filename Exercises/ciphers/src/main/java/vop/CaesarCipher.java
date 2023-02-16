@@ -19,8 +19,8 @@ public class CaesarCipher extends AbstractCipher {
             }
         }
         StringBuilder result = new StringBuilder();
-        for (char c:
-             chars) {
+        for (char c :
+                chars) {
             result.append(c);
         }
         return result.toString();
@@ -36,7 +36,7 @@ public class CaesarCipher extends AbstractCipher {
             }
         }
         StringBuilder result = new StringBuilder();
-        for (char c:
+        for (char c :
                 chars) {
             result.append(c);
         }

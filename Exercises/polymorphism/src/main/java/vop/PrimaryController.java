@@ -2,14 +2,17 @@ package vop;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 public class PrimaryController {
     @FXML
     RadioButton ellipseRadio, rectangleRadio, circleRadio, squareRadio;
     ToggleGroup toggleGroup = new ToggleGroup();
     @FXML
-    TextField t1,t2;
+    TextField t1, t2;
     @FXML
     TextArea textArea;
 
@@ -37,17 +40,17 @@ public class PrimaryController {
         }
     }
 
-    public void getInfoActionHandler(ActionEvent event){
+    public void getInfoActionHandler(ActionEvent event) {
         ShapeFacade.SHAPES shape = (ShapeFacade.SHAPES) toggleGroup.getSelectedToggle().getUserData();
         String currentText = textArea.getText();
         switch (shape) {
             case SQUARE, CIRCLE -> {
-                String result = ShapeFacade.getInstance().getShapeInfo((ShapeFacade.SHAPES) toggleGroup.getSelectedToggle().getUserData(),new double[]{Double.parseDouble(t1.getText())});
-                textArea.setText(currentText+=result);
+                String result = ShapeFacade.getInstance().getShapeInfo((ShapeFacade.SHAPES) toggleGroup.getSelectedToggle().getUserData(), Double.parseDouble(t1.getText()));
+                textArea.setText(currentText += result);
             }
             case RECTANGLE, ELLIPSE -> {
-                String result = ShapeFacade.getInstance().getShapeInfo((ShapeFacade.SHAPES) toggleGroup.getSelectedToggle().getUserData(),new double[]{Double.parseDouble(t1.getText()),Double.parseDouble(t2.getText())});
-                textArea.setText(currentText+=result);
+                String result = ShapeFacade.getInstance().getShapeInfo((ShapeFacade.SHAPES) toggleGroup.getSelectedToggle().getUserData(), Double.parseDouble(t1.getText()), Double.parseDouble(t2.getText()));
+                textArea.setText(currentText += result);
             }
         }
     }

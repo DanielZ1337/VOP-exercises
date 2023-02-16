@@ -6,7 +6,6 @@
 package vop;
 
 /**
- *
  * @author erso
  */
 public class ShapeFacade {
@@ -14,34 +13,29 @@ public class ShapeFacade {
     //Singleton Stufff:
     private static ShapeFacade instance = null;
 
+    private ShapeFacade() {
+    }
+
     public static ShapeFacade getInstance() {
         if (instance == null) {
             instance = new ShapeFacade();
         }
         return instance;
     }
-
-    private ShapeFacade() {
-    }
     //---------------------------
-
-    // enum som kendes af GUI'en
-    public enum SHAPES {
-        CIRCLE, ELLIPSE, RECTANGLE, SQUARE
-    }
 
     // Facadens public metoder
     public String getShapeInfo(SHAPES shape, double... parametre) {
         ShapeInterface currentShape;
-        switch(shape){
+        switch (shape) {
             case CIRCLE -> {
                 currentShape = new Circle(parametre[0]);
             }
             case ELLIPSE -> {
-                currentShape = new Ellipse(parametre[0],parametre[1]);
+                currentShape = new Ellipse(parametre[0], parametre[1]);
             }
             case RECTANGLE -> {
-                currentShape = new Rectangle(parametre[0],parametre[1]);
+                currentShape = new Rectangle(parametre[0], parametre[1]);
             }
             case SQUARE -> {
                 currentShape = new Square(parametre[0]);
@@ -51,6 +45,11 @@ public class ShapeFacade {
             }
         }
         return currentShape.toString();
+    }
+
+    // enum som kendes af GUI'en
+    public enum SHAPES {
+        CIRCLE, ELLIPSE, RECTANGLE, SQUARE
     }
 
 }

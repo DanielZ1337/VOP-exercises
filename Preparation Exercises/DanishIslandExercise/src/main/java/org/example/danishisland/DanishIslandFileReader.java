@@ -9,14 +9,28 @@ import java.util.Scanner;
 
 public class DanishIslandFileReader {
 
-    private File inFile;
+    private final File inFile;
     private List<DanishIsland> islandList;
 
     public DanishIslandFileReader(String fName) {
         inFile = new File(fName);
     }
 
-    private void readFile() throws FileNotFoundException{
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws FileNotFoundException {
+        System.out.println(new File(".").getAbsolutePath());
+        DanishIslandFileReader fr = new DanishIslandFileReader("Preparation Exercises/DanishIslandExercise/Islands punktum.txt");
+        //DanishIslandFileReader fr = new DanishIslandFileReader("Islands komma.txt");
+        fr.readFile();
+
+
+        System.out.println("Result:\n" + fr.getList());
+
+    }
+
+    private void readFile() throws FileNotFoundException {
         islandList = new ArrayList<DanishIsland>();
         Scanner scan = null;
         String line;
@@ -28,7 +42,7 @@ public class DanishIslandFileReader {
         int addr;
         int adkm;
         Scanner scanner = new Scanner(inFile);
-        while(scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
             String[] strings = scanner.nextLine().split(" ");
             name = strings[0];
             circ = Double.parseDouble(strings[1]);
@@ -47,23 +61,8 @@ public class DanishIslandFileReader {
 
     }
 
-    public List<?> getList(){
+    public List<?> getList() {
         return islandList;
-    }
-
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new File(".").getAbsolutePath());
-        DanishIslandFileReader fr = new DanishIslandFileReader("Preparation Exercises/DanishIslandExercise/Islands punktum.txt");
-        //DanishIslandFileReader fr = new DanishIslandFileReader("Islands komma.txt");
-        fr.readFile();
-
-
-        System.out.println("Result:\n" + fr.getList());
-
     }
 
 

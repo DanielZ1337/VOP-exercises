@@ -6,17 +6,16 @@
 package vop;
 
 /**
- *
  * @author erso
  */
 public interface ShapeInterface {
     double PI = Math.PI;
-    
+
     double getArea();
 
     double getCircumference();
 
- 
+
 //    default String getString() {
 //        return "Shape: " + getClass().getSimpleName() + "\nArea=" + getArea()
 //                + "\nCircum: " + getCircumference();

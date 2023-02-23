@@ -32,16 +32,16 @@ public class IterativeBinSearchTest {
     @DisplayName("Testing iterative find negative return when not found...")
     @Test
     void shouldReturnNegativeInsertionPointWhenNotFound() {
-        for (int i = 0; i < 100; i++) {
-            int numberFound = i;
-            for (int fibo : FIBOS) {
-                if (numberFound == fibo) {
-                    numberFound = 0;
+        for (int i = -1000; i < 1000; i++) {
+            boolean numberExist = false;
+            for (int no:
+                    FIBOS) {
+                if (no == i) {
+                    numberExist = true;
                     break;
                 }
             }
-
-            if (numberFound == i) {
+            if (!numberExist){
                 assertTrue(IterativeBinSearch.find(FIBOS, i) < 0);
             }
         }

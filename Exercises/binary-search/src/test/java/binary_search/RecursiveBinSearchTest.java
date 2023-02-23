@@ -2,8 +2,13 @@ package binary_search;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.util.ReflectionUtils;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.IntStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -32,16 +37,16 @@ public class RecursiveBinSearchTest {
     @DisplayName("Testing recursive find negative return when not found...")
     @Test
     void shouldReturnNegativeInsertionPointWhenNotFound() {
-        for (int i = -20; i < 100; i++) {
-            int numberFound = i;
-            for (int fibo : FIBOS) {
-                if (numberFound == fibo) {
-                    numberFound = 0;
+        for (int i = -1000; i < 1000; i++) {
+            boolean numberExist = false;
+            for (int no:
+                 FIBOS) {
+                if (no == i) {
+                    numberExist = true;
                     break;
                 }
             }
-
-            if (numberFound == i) {
+            if (!numberExist){
                 assertTrue(RecursiveBinSearch.recursiveFind(FIBOS, i) < 0);
             }
         }

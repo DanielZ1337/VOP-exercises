@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Exercises/frencemountains/Lesson03MountainsExercise.iml" filepath="$PROJECT_DIR$/Exercises/frencemountains/Lesson03MountainsExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" filepath="$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" filepath="$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/binary-search/Lesson4UnitTestingExercise.iml" filepath="$PROJECT_DIR$/Exercises/binary-search/Lesson4UnitTestingExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VOP-exercises.iml" filepath="$PROJECT_DIR$/.idea/VOP-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" filepath="$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" />
     </modules>

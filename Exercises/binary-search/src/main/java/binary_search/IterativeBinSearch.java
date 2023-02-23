@@ -2,10 +2,10 @@ package binary_search;
 
 public class IterativeBinSearch {
     public static int find(int[] numbers, int target) {
-        int min = 0, max = numbers.length-1;
+        int min = 0, max = numbers.length - 1;
 
         while (min <= max) {
-            int pos = (min+max) / 2;
+            int pos = (min + max) / 2;
             if (numbers[pos] == target) {
                 return pos;
             }
@@ -17,6 +17,6 @@ public class IterativeBinSearch {
         }
 
         // +1, because 0 belongs to positive indices
-        return -(min+1);
+        return -(min + 1);
     }
 }

@@ -12,9 +12,9 @@ public class EmployeeBusinessLogic {
     public double calculateAppraisal(Employee employee) {
         double appraisal = 0;
 
-        if(employee.getMonthlySalary() < 10000){
+        if (employee.getMonthlySalary() < 10000) {
             appraisal = 500;
-        }else{
+        } else {
             appraisal = 1000;
         }
 

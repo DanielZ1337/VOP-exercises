@@ -11,6 +11,7 @@
         <module name="Lec3-PrepExercise" />
         <module name="Lesson1Exercise-Ciphers" />
         <module name="searchandreplace" />
+        <module name="Lesson4UnitTestingExercise" />
         <module name="Lesson1Exercise-Polymorphism" />
         <module name="Lesson03MountainsExercise" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="Lesson03MountainsExercise" target="16" />
       <module name="Lesson1Exercise-Ciphers" target="16" />
       <module name="Lesson1Exercise-Polymorphism" target="16" />
+      <module name="Lesson4UnitTestingExercise" target="16" />
       <module name="searchandreplace" target="16" />
     </bytecodeTargetLevel>
   </component>

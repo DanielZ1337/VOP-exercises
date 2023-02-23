@@ -1,5 +1,6 @@
 package binary_search;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -10,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class RecursiveBinSearchTest {
     private static final int[] FIBOS = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
 
+    @DisplayName("Testing recursive find can find index of number...")
     @Test
     void shouldFindsIndexOfNumber() {
         Arrays.stream(FIBOS).forEach(i -> {
@@ -27,6 +29,7 @@ public class RecursiveBinSearchTest {
         assertEquals(9, RecursiveBinSearch.recursiveFind(FIBOS, 55));
     }
 
+    @DisplayName("Testing recursive find negative return when not found...")
     @Test
     void shouldReturnNegativeInsertionPointWhenNotFound() {
         for (int i = -20; i < 100; i++) {

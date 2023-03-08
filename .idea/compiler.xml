@@ -11,12 +11,16 @@
         <module name="Lec3-PrepExercise" />
         <module name="Lesson1Exercise-Ciphers" />
         <module name="searchandreplace" />
+        <module name="Assignment1" />
         <module name="Lesson4UnitTestingExercise" />
+        <module name="Assignment2" />
         <module name="Lesson1Exercise-Polymorphism" />
         <module name="Lesson03MountainsExercise" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Assignment1" target="16" />
+      <module name="Assignment2" target="16" />
       <module name="CamelWriterExercise" target="19" />
       <module name="DanishIslandExercise" target="19" />
       <module name="Lec3-PrepExercise" target="19" />

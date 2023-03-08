@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercises/practice_assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Exercises/practice_assignment1/Assignment1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/practice_assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/Exercises/practice_assignment2/Assignment2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" />

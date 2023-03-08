@@ -1,0 +1,3 @@
+{name='Ryan Reynolds', age=46, hasBeenInterviewed=false}
+{name='Leonardo DiCaprio', age=48, hasBeenInterviewed=false}
+{name='Tom Holland', age=26, hasBeenInterviewed=true}

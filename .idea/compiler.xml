@@ -17,6 +17,7 @@
         <module name="Lec3-PrepExercise" />
         <module name="Lesson1Exercise-Ciphers" />
         <module name="Lesson6Exercise" />
+        <module name="OneArmedBandit" />
         <module name="Lesson4UnitTestingExercise" />
         <module name="WordCounting" />
       </profile>
@@ -33,6 +34,7 @@
       <module name="Lesson1Exercise-Polymorphism" target="16" />
       <module name="Lesson4UnitTestingExercise" target="16" />
       <module name="Lesson6Exercise" target="16" />
+      <module name="OneArmedBandit" target="15" />
       <module name="searchandreplace" target="16" />
       <module name="WordCounting" target="19" />
     </bytecodeTargetLevel>

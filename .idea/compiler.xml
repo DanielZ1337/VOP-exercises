@@ -14,6 +14,8 @@
         <module name="Lesson1Exercise-Polymorphism" />
         <module name="FlashingText" />
         <module name="Lesson03MountainsExercise" />
+        <module name="execise" />
+        <module name="Callback" />
         <module name="Lec3-PrepExercise" />
         <module name="Lesson1Exercise-Ciphers" />
         <module name="Lesson6Exercise" />
@@ -25,8 +27,10 @@
     <bytecodeTargetLevel>
       <module name="Assignment1" target="16" />
       <module name="Assignment2" target="16" />
+      <module name="Callback" target="15" />
       <module name="CamelWriterExercise" target="19" />
       <module name="DanishIslandExercise" target="19" />
+      <module name="execise" target="16" />
       <module name="FlashingText" target="19" />
       <module name="Lec3-PrepExercise" target="19" />
       <module name="Lesson03MountainsExercise" target="16" />

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop.PrimaryController">
+    <children>
+        <TextArea fx:id="textArea" layoutX="224.0" layoutY="24.0" prefHeight="197.0" prefWidth="254.0" wrapText="true" />
+        <Button fx:id="startButton" layoutX="37.0" layoutY="37.0" mnemonicParsing="false" onAction="#buttonAction" text="Start" />
+        <Button fx:id="stopButton" layoutX="135.0" layoutY="37.0" mnemonicParsing="false" onAction="#buttonAction" text="Stop" />
+        <ImageView fx:id="die1view" fitHeight="81.0" fitWidth="85.0" layoutX="78.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="die2view" fitHeight="81.0" fitWidth="85.0" layoutX="78.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

@@ -31,7 +31,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/danielz/Documents/SDU/VOP/VOP-exercises"
+    "last_opened_file_path": "C:/Users/danielz/Desktop/Projects/react_express"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678836910568</updated>
       <workItem from="1678836911851" duration="9000" />
+      <workItem from="1679389472448" duration="43000" />
     </task>
     <servers />
   </component>

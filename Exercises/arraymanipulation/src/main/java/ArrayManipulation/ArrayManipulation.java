@@ -12,7 +12,7 @@ public class ArrayManipulation {
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(100);
         }
-        System.out.println("Input:  " + Arrays.toString(array));
+        System.out.println("Input: " + Arrays.toString(array));
 
         ArrayManipulation arrMani = new ArrayManipulation();
         int[] result = arrMani.evenOdd(array);
@@ -32,6 +32,7 @@ public class ArrayManipulation {
                 oddIndex++;
             }
         }
+        System.out.println("EvenOdd: " + Arrays.toString(temp));
         sort(temp, 5);
         return temp;
     }

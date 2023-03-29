@@ -14,6 +14,7 @@
         <module name="Lesson1Exercise-Polymorphism" />
         <module name="FlashingText" />
         <module name="Lesson03MountainsExercise" />
+        <module name="Recursive-Lecture-9" />
         <module name="execise" />
         <module name="Callback" />
         <module name="Lec3-PrepExercise" />
@@ -39,6 +40,7 @@
       <module name="Lesson4UnitTestingExercise" target="16" />
       <module name="Lesson6Exercise" target="16" />
       <module name="OneArmedBandit" target="15" />
+      <module name="Recursive-Lecture-9" target="19" />
       <module name="searchandreplace" target="16" />
       <module name="WordCounting" target="19" />
     </bytecodeTargetLevel>

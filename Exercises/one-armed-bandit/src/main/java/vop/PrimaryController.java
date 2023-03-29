@@ -112,10 +112,11 @@ public class PrimaryController {
             }
         }
     }
-    public void startSpinnersHandler(ActionEvent event){
-        t1 = new Thread(new BanditRunnable(0,120,spin1));
-        t2 = new Thread(new BanditRunnable(0,100,spin2));
-        t3 = new Thread(new BanditRunnable(0,140,spin3));
+
+    public void startSpinnersHandler(ActionEvent event) {
+        t1 = new Thread(new BanditRunnable(0, 120, spin1));
+        t2 = new Thread(new BanditRunnable(0, 100, spin2));
+        t3 = new Thread(new BanditRunnable(0, 140, spin3));
         t1.setDaemon(true);
         t2.setDaemon(true);
         t3.setDaemon(true);
@@ -129,18 +130,18 @@ public class PrimaryController {
         resultLabel.setText("Running...");
     }
 
-    public void stopSpinnersHandler(ActionEvent event){
-        if (((Button)event.getSource()).equals(btn1)){
+    public void stopSpinnersHandler(ActionEvent event) {
+        if (((Button) event.getSource()).equals(btn1)) {
             t1.interrupt();
             btn1.setDisable(true);
-        } else if (((Button)event.getSource()).equals(btn2)){
+        } else if (((Button) event.getSource()).equals(btn2)) {
             t2.interrupt();
             btn2.setDisable(true);
         } else {
             t3.interrupt();
             btn3.setDisable(true);
         }
-        if (t1.isInterrupted() && t2.isInterrupted() && t3.isInterrupted()){
+        if (t1.isInterrupted() && t2.isInterrupted() && t3.isInterrupted()) {
             startSpinnersButton.setDisable(false);
         }
     }

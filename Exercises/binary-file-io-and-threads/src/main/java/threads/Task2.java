@@ -1,6 +1,6 @@
 package threads;
 
-public class Task2 extends Thread{
+public class Task2 extends Thread {
     private Counter cr;
 
     public Task2(Counter cr) {

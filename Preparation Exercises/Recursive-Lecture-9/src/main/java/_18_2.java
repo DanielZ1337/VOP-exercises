@@ -12,7 +12,7 @@ public class _18_2 {
                 + index + " is " + fib(index));
     }
 
-    public static long fib(long n){
+    public static long fib(long n) {
         long currentFib = 0;
         long f0 = 0; // For fib(0)
         long f1 = 1; // For fib(1)

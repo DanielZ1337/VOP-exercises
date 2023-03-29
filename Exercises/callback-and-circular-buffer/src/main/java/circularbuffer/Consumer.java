@@ -6,7 +6,7 @@ public class Consumer implements Runnable {
 
     public Consumer(CircularBuffer buffer, int number) {
         this.buffer = buffer;
-        new Thread(this, "Consumer_"+number).start();
+        new Thread(this, "Consumer_" + number).start();
     }
 
     public void run() {

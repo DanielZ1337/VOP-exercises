@@ -28,7 +28,8 @@ public class WriteSpeciesFileAppendError {
                 System.exit(0);
             }
         } else {
-            try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file, true)) {}) {
+            try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file, true)) {
+            }) {
 
                 Species califCondor = new Species("Calif. Condor", 27, 0.02);
                 outputStream.writeObject(califCondor);

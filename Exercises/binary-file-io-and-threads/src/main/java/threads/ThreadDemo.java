@@ -2,8 +2,7 @@ package threads;
 
 public class ThreadDemo {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Counter cr = new Counter();
         System.out.println(cr.getCounter());
         Task1 task1 = new Task1(cr);

@@ -22,7 +22,7 @@ public class FacadeWithCallback extends Thread {
     private File[] pictures;
 
     public FacadeWithCallback(CallBackInterface callBack) throws URISyntaxException {
-        this(callBack,  FacadeWithCallback.class.getResource("").toURI().getPath());
+        this(callBack, FacadeWithCallback.class.getResource("").toURI().getPath());
     }
 
     public FacadeWithCallback(CallBackInterface callBack, String pathToPics) {

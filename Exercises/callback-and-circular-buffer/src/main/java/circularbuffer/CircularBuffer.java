@@ -25,7 +25,7 @@ public class CircularBuffer {
         int val = buffer[getIndex];
         buffer[getIndex] = null;
         getIndex++;
-        getIndex%=size;
+        getIndex %= size;
         notify();
         return val;
     }
@@ -35,7 +35,7 @@ public class CircularBuffer {
         if (buffer[putIndex] == null) {
             buffer[putIndex] = n;
             putIndex++;
-            putIndex%=size;
+            putIndex %= size;
         } else {
             try {
                 wait();

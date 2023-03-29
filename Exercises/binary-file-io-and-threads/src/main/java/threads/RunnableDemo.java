@@ -2,8 +2,7 @@ package threads;
 
 public class RunnableDemo {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         RunnableTask task1 = new RunnableTask("Task 1");
         RunnableTask task2 = new RunnableTask("Task 2");
         RunnableTask task3 = new RunnableTask("Task 3");

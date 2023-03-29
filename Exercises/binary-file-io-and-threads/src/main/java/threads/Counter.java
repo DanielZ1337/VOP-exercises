@@ -3,7 +3,7 @@ package threads;
 public class Counter {
     private int counter;
 
-    public Counter(){
+    public Counter() {
         counter = 0;
     }
 
@@ -12,7 +12,7 @@ public class Counter {
     }
 
     public void incrementCounter() {
-        counter+=2;
+        counter += 2;
     }
 
     public void decrementCounter() {

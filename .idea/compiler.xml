@@ -15,6 +15,7 @@
         <module name="FlashingText" />
         <module name="Lesson03MountainsExercise" />
         <module name="Recursive-Lecture-9" />
+        <module name="bats" />
         <module name="execise" />
         <module name="Callback" />
         <module name="Lec3-PrepExercise" />
@@ -28,6 +29,7 @@
     <bytecodeTargetLevel>
       <module name="Assignment1" target="16" />
       <module name="Assignment2" target="16" />
+      <module name="bats" target="19" />
       <module name="Callback" target="15" />
       <module name="CamelWriterExercise" target="19" />
       <module name="DanishIslandExercise" target="19" />

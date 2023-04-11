@@ -5,8 +5,7 @@ import java.util.List;
 
 public class Bats {
 
-    public static List<Bat> all()
-    {
+    public static List<Bat> all() {
         List<Bat> bats = new ArrayList<>();
         bats.add(new Bat("Aethalops aequalis", "Unknown", "Frugivore"));
         bats.add(new Bat("Amorphochilus schnablii", "Stable", "Insectivore"));

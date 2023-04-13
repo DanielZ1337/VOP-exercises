@@ -5,15 +5,15 @@ import java.util.concurrent.Executors;
 
 public class ThreadDemo {
 
-    public static void main (String [] args) {
+    public static void main(String[] args) {
 
-          VehicleCounting vc= new VehicleCounting(5);
+        VehicleCounting vc = new VehicleCounting(5);
         System.out.println("No. of parked vehicles before arrival and departure=" + vc.getCounter());
 
         // Create Tasks
-        ArrivalTask p1=new ArrivalTask(vc);
-        ArrivalTask p2=new ArrivalTask(vc);
-        DepartureTask p3=new DepartureTask(vc);
+        ArrivalTask p1 = new ArrivalTask(vc);
+        ArrivalTask p2 = new ArrivalTask(vc);
+        DepartureTask p3 = new DepartureTask(vc);
 
         ExecutorService executor = Executors.newFixedThreadPool(3);
         executor.execute(p1);

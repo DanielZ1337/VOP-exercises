@@ -3,7 +3,7 @@ package multithreading;
 public class VehicleCounting {
     private int counter;
 
-    public VehicleCounting(int counter){
+    public VehicleCounting(int counter) {
         this.counter = counter;
     }
 

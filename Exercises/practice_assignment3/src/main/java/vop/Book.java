@@ -6,7 +6,7 @@ public class Book {
     private String author;
     private BookType bookType;
 
-    public Book(String name, String author, BookType bookType){
+    public Book(String name, String author, BookType bookType) {
         this.name = name;
         this.author = author;
         this.bookType = bookType;
@@ -20,7 +20,7 @@ public class Book {
     public static void main(String[] args) {
 
 
-         Book b = new Book("The Great Gatsby", "Francis Scott Fitzgerald", BookType.HARDCOVER);
-         System.out.println(b);
+        Book b = new Book("The Great Gatsby", "Francis Scott Fitzgerald", BookType.HARDCOVER);
+        System.out.println(b);
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop.PrimaryController">
+    <VBox>
+        <HBox>
+            <VBox>
+                <ImageView fx:id="spin1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true"/>
+                <Button fx:id="btn1" id="btn1" onAction="#stopSpinnersHandler">
+                    Stop 1
+                </Button>
+            </VBox>
+            <VBox>
+                <ImageView fx:id="spin2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true"/>
+                <Button fx:id="btn2" id="btn2" onAction="#stopSpinnersHandler">
+                    Stop 2
+                </Button>
+            </VBox>
+            <VBox>
+                <ImageView fx:id="spin3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true"/>
+                <Button fx:id="btn3" id="btn3" onAction="#stopSpinnersHandler">
+                    Stop 3
+                </Button>
+            </VBox>
+        </HBox>
+        <Button fx:id="startSpinnersButton" onAction="#startSpinnersHandler"> Start </Button>
+        <Label fx:id="resultLabel"> </Label>
+    </VBox>
+</AnchorPane>

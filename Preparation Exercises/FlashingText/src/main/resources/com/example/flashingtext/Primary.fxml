@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="102.0" prefWidth="224.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flashingtext.PrimaryController">
+
+    <Label fx:id="funLabel" layoutX="2.0" layoutY="20.0" prefHeight="50.0" prefWidth="155.0" text="Programming is fun">
+
+    </Label>
+    <HBox spacing="30.0">
+        <VBox>
+            <HBox spacing="40.0">
+                <Button fx:id="startButton" mnemonicParsing="false" onAction="#startButtonAction" text="Start">
+                </Button>
+                <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopButtonAction" text="Stop">
+                </Button>
+            </HBox>
+        </VBox>
+        <VBox>
+            <RadioButton fx:id="r100" id="100">
+                100 ms
+            </RadioButton>
+            <RadioButton fx:id="r200" id="200">
+                200 ms
+            </RadioButton>
+            <RadioButton fx:id="r400" id="400">
+                400 ms
+            </RadioButton>
+        </VBox>
+    </HBox>
+
+</VBox>

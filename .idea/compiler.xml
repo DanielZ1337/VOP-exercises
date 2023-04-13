@@ -8,27 +8,43 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DanishIslandExercise" />
         <module name="CamelWriterExercise" />
-        <module name="Lec3-PrepExercise" />
-        <module name="Lesson1Exercise-Ciphers" />
         <module name="searchandreplace" />
         <module name="Assignment1" />
-        <module name="Lesson4UnitTestingExercise" />
         <module name="Assignment2" />
         <module name="Lesson1Exercise-Polymorphism" />
+        <module name="FlashingText" />
         <module name="Lesson03MountainsExercise" />
+        <module name="Recursive-Lecture-9" />
+        <module name="bats" />
+        <module name="execise" />
+        <module name="Callback" />
+        <module name="Lec3-PrepExercise" />
+        <module name="Lesson1Exercise-Ciphers" />
+        <module name="Lesson6Exercise" />
+        <module name="OneArmedBandit" />
+        <module name="Lesson4UnitTestingExercise" />
+        <module name="WordCounting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Assignment1" target="16" />
       <module name="Assignment2" target="16" />
+      <module name="bats" target="19" />
+      <module name="Callback" target="15" />
       <module name="CamelWriterExercise" target="19" />
       <module name="DanishIslandExercise" target="19" />
+      <module name="execise" target="16" />
+      <module name="FlashingText" target="19" />
       <module name="Lec3-PrepExercise" target="19" />
       <module name="Lesson03MountainsExercise" target="16" />
       <module name="Lesson1Exercise-Ciphers" target="16" />
       <module name="Lesson1Exercise-Polymorphism" target="16" />
       <module name="Lesson4UnitTestingExercise" target="16" />
+      <module name="Lesson6Exercise" target="16" />
+      <module name="OneArmedBandit" target="15" />
+      <module name="Recursive-Lecture-9" target="19" />
       <module name="searchandreplace" target="16" />
+      <module name="WordCounting" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

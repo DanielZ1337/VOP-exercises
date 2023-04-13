@@ -4,14 +4,22 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exercises/practice_assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Exercises/practice_assignment1/Assignment1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/practice_assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/Exercises/practice_assignment2/Assignment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/callback-and-circular-buffer/Callback.iml" filepath="$PROJECT_DIR$/Exercises/callback-and-circular-buffer/Callback.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/CamelWriterExercise/CamelWriterExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/DanishIslandExercise/DanishIslandExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/FlashingText/FlashingText.iml" filepath="$PROJECT_DIR$/Preparation Exercises/FlashingText/FlashingText.iml" />
       <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" filepath="$PROJECT_DIR$/Preparation Exercises/Lec3-PrepExercise/Lec3-PrepExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/frencemountains/Lesson03MountainsExercise.iml" filepath="$PROJECT_DIR$/Exercises/frencemountains/Lesson03MountainsExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" filepath="$PROJECT_DIR$/Exercises/ciphers/Lesson1Exercise-Ciphers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" filepath="$PROJECT_DIR$/Exercises/polymorphism/Lesson1Exercise-Polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/binary-search/Lesson4UnitTestingExercise.iml" filepath="$PROJECT_DIR$/Exercises/binary-search/Lesson4UnitTestingExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/binary-file-io-and-threads/Lesson6Exercise.iml" filepath="$PROJECT_DIR$/Exercises/binary-file-io-and-threads/Lesson6Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/one-armed-bandit/OneArmedBandit.iml" filepath="$PROJECT_DIR$/Exercises/one-armed-bandit/OneArmedBandit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/Recursive-Lecture-9/Recursive-Lecture-9.iml" filepath="$PROJECT_DIR$/Preparation Exercises/Recursive-Lecture-9/Recursive-Lecture-9.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VOP-exercises.iml" filepath="$PROJECT_DIR$/.idea/VOP-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Preparation Exercises/WordCounting/WordCounting.iml" filepath="$PROJECT_DIR$/Preparation Exercises/WordCounting/WordCounting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/enums-and-switch-expressions/bats.iml" filepath="$PROJECT_DIR$/Exercises/enums-and-switch-expressions/bats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/arraymanipulation/execise.iml" filepath="$PROJECT_DIR$/Exercises/arraymanipulation/execise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" filepath="$PROJECT_DIR$/Exercises/searchandreplace/searchandreplace.iml" />
     </modules>
   </component>

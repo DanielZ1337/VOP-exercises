@@ -1,8 +1,5 @@
 package student_information;
 
-import com.sun.source.tree.Tree;
-
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Student implements Comparable<Student> {

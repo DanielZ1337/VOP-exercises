@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+         prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop.PrimaryController">
+    <Tab text="Add new Book">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <HBox>
+                <VBox>
+                    <Label fx:id="add_lbl_name">Name</Label>
+                    <TextField fx:id="add_txt_name"></TextField>
+                    <Label fx:id="add_lbl_author">Author</Label>
+                    <TextField fx:id="add_txt_author"></TextField>
+                    <Label fx:id="add_lbl_booktype">Book type</Label>
+                    <ChoiceBox fx:id="add_booktype_choice"/>
+                </VBox>
+                <VBox>
+                    <Label fx:id="add_lbl_isbn">ISBN</Label>
+                    <TextField fx:id="add_txt_isbn"></TextField>
+                    <TextArea fx:id="add_output"/>
+                    <Button onAction="#add_book" fx:id="add_btn" text="Add"/>
+                </VBox>
+            </HBox>
+        </AnchorPane>
+    </Tab>
+    <Tab text="Get info about Book">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <HBox>
+                <VBox>
+                    <Label fx:id="get_lbl_isbn">ISBN</Label>
+                    <TextField fx:id="get_txt_isbn"></TextField>
+                    <TextArea fx:id="get_output"/>
+                    <Button onAction="#get_book" fx:id="get_btn" text="Get info"/>
+                </VBox>
+            </HBox>
+        </AnchorPane>
+    </Tab>
+</TabPane>

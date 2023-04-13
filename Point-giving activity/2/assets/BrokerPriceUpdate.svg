@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="502px" preserveAspectRatio="none" style="width:1434px;height:502px;background:#FFFFFF;" version="1.1" viewBox="0 0 1434 502" width="1434px" zoomAndPan="magnify"><defs/><g><!--MD5=[bc5cfb6f659265949d29b23f39cdf5e7]
+class Broker--><g id="elem_Broker"><rect codeLine="2" fill="#F1F1F1" height="161.9531" id="Broker" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="1032" x="389" y="14"/><ellipse cx="851.5" cy="46" fill="#ADD1B2" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M856.4463,58.2861 Q855.2842,58.8838 854.0059,59.1826 Q852.7275,59.4814 851.3164,59.4814 Q846.3027,59.4814 843.6631,56.1777 Q841.0234,52.874 841.0234,46.6318 Q841.0234,40.373 843.6631,37.0693 Q846.3027,33.7656 851.3164,33.7656 Q852.7275,33.7656 854.0225,34.0645 Q855.3174,34.3633 856.4463,34.9609 L856.4463,40.4063 Q855.1846,39.2441 853.9976,38.7046 Q852.8105,38.165 851.5488,38.165 Q848.8594,38.165 847.4897,40.2983 Q846.1201,42.4316 846.1201,46.6318 Q846.1201,50.8154 847.4897,52.9487 Q848.8594,55.082 851.5488,55.082 Q852.8105,55.082 853.9976,54.5425 Q855.1846,54.0029 856.4463,52.8408 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="90" x="892.5" y="56.582">Broker</text><line style="stroke:#181818;stroke-width:1.0;" x1="391" x2="1419" y1="78" y2="78"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="16" x="401" y="113.0703">-</text><text fill="#000000" font-family="sans-serif" font-size="28" font-weight="bold" lengthAdjust="spacing" textLength="878" x="417" y="113.0703">priceUpdateSubscribers : List&lt;PriceUpdateCallbackInterface&gt;</text><line style="stroke:#181818;stroke-width:1.0;" x1="391" x2="1419" y1="126.9766" y2="126.9766"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="22" x="401" y="162.0469">+</text><text fill="#000000" font-family="sans-serif" font-size="28" font-weight="bold" lengthAdjust="spacing" textLength="986" x="423" y="162.0469">addPriceUpdateSubscriber(subscriber : PriceUpdateCallbackInterface)</text></g><!--MD5=[f829d0bab0c7195026f5ba7000e22301]
+class PriceUpdateCallbackInterface--><g id="elem_PriceUpdateCallbackInterface"><rect codeLine="8" fill="#F1F1F1" height="128.9766" id="PriceUpdateCallbackInterface" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="464" x="673" y="360"/><ellipse cx="703" cy="392" fill="#B4A7E5" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M695.8555,384.5303 L695.8555,380.2139 L710.6143,380.2139 L710.6143,384.5303 L705.6836,384.5303 L705.6836,400.6836 L710.6143,400.6836 L710.6143,405 L695.8555,405 L695.8555,400.6836 L700.7861,400.6836 L700.7861,384.5303 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" font-style="italic" lengthAdjust="spacing" textLength="400" x="731" y="402.582">PriceUpdateCallbackInterface</text><line style="stroke:#181818;stroke-width:1.0;" x1="675" x2="1135" y1="424" y2="424"/><line style="stroke:#181818;stroke-width:1.0;" x1="675" x2="1135" y1="440" y2="440"/><text fill="#000000" font-family="sans-serif" font-size="28" font-weight="bold" lengthAdjust="spacing" textLength="398" x="685" y="475.0703">priceUpdate(tick : int) : void</text></g><g id="elem_GMN5"><path d="M12,383 L12,464.2422 A0,0 0 0 0 12,464.2422 L602,464.2422 A0,0 0 0 0 602,464.2422 L602,432 L672.22,424 L602,416 L602,403 L582,383 L12,383 A0,0 0 0 0 12,383 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><path d="M582,383 L582,403 L602,403 L582,383 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="94" x="24" y="418.1367">Use the</text><text fill="#000000" font-family="sans-serif" font-size="26" font-weight="bold" lengthAdjust="spacing" textLength="48" x="126" y="418.1367">tick</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="380" x="182" y="418.1367">parameter to retrieve the price</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="548" x="24" y="448.7578">from the Symbol's priceAtTick(tick) method</text></g><!--MD5=[6deaa35db202b77a9e23f9a1bdc91a4c]
+link Broker to PriceUpdateCallbackInterface--><g id="link_Broker_PriceUpdateCallbackInterface"><path codeLine="13" d="M905,176.5 C905,228.52 905,296.06 905,347.12 " fill="none" id="Broker-to-PriceUpdateCallbackInterface" style="stroke:#181818;stroke-width:2.0;"/><polygon fill="#181818" points="905,357.06,913,339.06,905,347.06,897,339.06,905,357.06" style="stroke:#181818;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="334" x="916" y="263.1367">Each subscriber is notified</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="352" x="907" y="293.7578">when a price update occurs.</text></g><!--MD5=[93d62ae16ef92d6376df58b5e91eb0c0]
+@startuml Broker
+skinparam classAttributeIconSize 0
+class Broker
+{
+    -**priceUpdateSubscribers : List<PriceUpdateCallbackInterface>**
+    +**addPriceUpdateSubscriber(subscriber : PriceUpdateCallbackInterface)**
+}
+
+interface PriceUpdateCallbackInterface
+{
+    **priceUpdate(tick : int) : void**
+}
+
+Broker - -> PriceUpdateCallbackInterface : Each subscriber is notified\nwhen a price update occurs.
+
+note left of PriceUpdateCallbackInterface : Use the **tick** parameter to retrieve the price\nfrom the Symbol's priceAtTick(tick) method
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>

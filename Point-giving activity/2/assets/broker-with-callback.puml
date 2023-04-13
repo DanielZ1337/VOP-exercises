@@ -1,0 +1,23 @@
+@startuml Broker
+skinparam classAttributeIconSize 0
+class Broker
+{
+    -**openForOrderSubscribers : List<OpenForOrdersCallbackInterface>**
+    +{static} getBroker() : Broker
+    +buy(order : Order) : void
+    +isBusy() : boolean
+    +**addOpenForOrderSubscriber(subscriber : OpenForOrdersCallbackInterface)**
+}
+
+interface OpenForOrdersCallbackInterface
+{
+    **openForOrders() : void**
+}
+
+exception BrokerBusyException
+{
+}
+
+Broker --> BrokerBusyException : throws when buy() is called and the broker is busy
+Broker -> OpenForOrdersCallbackInterface : Each subscriber is notified when\nthe broker is open for new orders
+@enduml

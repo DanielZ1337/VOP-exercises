@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="668px" preserveAspectRatio="none" style="width:578px;height:668px;background:#FFFFFF;" version="1.1" viewBox="0 0 578 668" width="578px" zoomAndPan="magnify"><defs/><g><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><g id="elem_Account"><rect codeLine="3" fill="#F1F1F1" height="392.7891" id="Account" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="550" x="14" y="262"/><ellipse cx="224.5" cy="294" fill="#ADD1B2" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M229.4463,306.2861 Q228.2842,306.8838 227.0059,307.1826 Q225.7275,307.4814 224.3164,307.4814 Q219.3027,307.4814 216.6631,304.1777 Q214.0234,300.874 214.0234,294.6318 Q214.0234,288.373 216.6631,285.0693 Q219.3027,281.7656 224.3164,281.7656 Q225.7275,281.7656 227.0225,282.0645 Q228.3174,282.3633 229.4463,282.9609 L229.4463,288.4063 Q228.1846,287.2441 226.9976,286.7046 Q225.8105,286.165 224.5488,286.165 Q221.8594,286.165 220.4897,288.2983 Q219.1201,290.4316 219.1201,294.6318 Q219.1201,298.8154 220.4897,300.9487 Q221.8594,303.082 224.5488,303.082 Q225.8105,303.082 226.9976,302.5425 Q228.1846,302.0029 229.4463,300.8408 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="112" x="265.5" y="304.582">Account</text><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="562" y1="326" y2="326"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="198" x="26" y="361.0703">-name : String</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="420" x="26" y="394.0469">-balance : double = 100_000d</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="456" x="26" y="427.0234">-equities : Map&lt;Symbol,Integer&gt;</text><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="562" y1="440.9297" y2="440.9297"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="336" x="26" y="476">+Account(name : String)</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="310" x="26" y="508.9766">+getBalance() : double</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="526" x="26" y="541.9531">+getEquities() : Map&lt;Symbol,Integer&gt;</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="458" x="26" y="574.9297">+buy(symbol : Symbol, units : int)</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="504" x="26" y="607.9063">+updateBalance(order : Order) : void</text><text fill="#000000" font-family="sans-serif" font-size="28" font-style="italic" lengthAdjust="spacing" textLength="334" x="26" y="640.8828">+openForOrders() : void</text></g><!--MD5=[e5ba995f572354ab3d6adf9227f4c70c]
+class OpenForOrdersCallbackInterface--><g id="elem_OpenForOrdersCallbackInterface"><rect codeLine="16" fill="#F1F1F1" height="128.9766" id="OpenForOrdersCallbackInterface" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="514" x="32" y="14"/><ellipse cx="62" cy="46" fill="#B4A7E5" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M54.8555,38.5303 L54.8555,34.2139 L69.6143,34.2139 L69.6143,38.5303 L64.6836,38.5303 L64.6836,54.6836 L69.6143,54.6836 L69.6143,59 L54.8555,59 L54.8555,54.6836 L59.7861,54.6836 L59.7861,38.5303 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" font-style="italic" lengthAdjust="spacing" textLength="450" x="90" y="56.582">OpenForOrdersCallbackInterface</text><line style="stroke:#181818;stroke-width:1.0;" x1="34" x2="544" y1="78" y2="78"/><line style="stroke:#181818;stroke-width:1.0;" x1="34" x2="544" y1="94" y2="94"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="312" x="44" y="129.0703">openForOrders() : void</text></g><!--MD5=[23e4ac16ac0217d6f560614d4b06c81d]
+reverse link OpenForOrdersCallbackInterface to Account--><g id="link_OpenForOrdersCallbackInterface_Account"><path d="M289,184.5 C289,208.54 289,234.86 289,261.34 " fill="none" id="OpenForOrdersCallbackInterface-backto-Account" style="stroke:#181818;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="275,184.94,289,144.94,303,184.94,275,184.94" style="stroke:#181818;stroke-width:2.0;"/></g><!--MD5=[4966013e1bc01287ffc6707a0ff2703e]
+@startuml Account
+skinparam classAttributeIconSize 0
+
+class Account implements OpenForOrdersCallbackInterface
+{
+    - name : String
+    - balance : double = 100_000d
+    - equities : Map<Symbol,Integer>
+    + Account(name : String)
+    + getBalance() : double
+    + getEquities() : Map<Symbol,Integer>
+    + buy(symbol : Symbol, units : int)
+    + updateBalance(order : Order) : void
+    + {abstract} openForOrders() : void
+}
+
+interface OpenForOrdersCallbackInterface
+{
+    openForOrders() : void
+}
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>

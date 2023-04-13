@@ -1,0 +1,15 @@
+@startuml Broker
+skinparam classAttributeIconSize 0
+class Broker
+{
+    +{static} getBroker() : Broker
+    +buy(order : Order) : void
+    +isBusy() : boolean
+}
+
+exception BrokerBusyException
+{
+}
+
+Broker --> BrokerBusyException : throws when buy() is called and the broker is busy
+@enduml

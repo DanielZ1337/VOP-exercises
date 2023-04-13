@@ -1,0 +1,27 @@
+variables:
+  MAVEN_OPTS: "-Dhttps.protocols=TLSv1.2 -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=WARN -Dorg.slf4j.simpleLogger.showDateTime=true -Djava.awt.headless=true"
+  MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true"
+
+image: maven:3-openjdk-18-slim
+
+cache:
+  paths:
+    - .m2/repository
+
+testSymbols:
+  stage: test
+  script:
+    - 'mvn test -Dtest=SymbolTest'
+  timeout: 3m
+
+testAccount:
+  stage: test
+  script:
+    - 'mvn test -Dtest=AccountTest'
+  timeout: 3m
+
+testBuyStock:
+  stage: test
+  script:
+    - 'mvn test -Dtest=BuyStockTest'
+  timeout: 3m

@@ -1,0 +1,22 @@
+@startuml Symbol Class Diagram
+skinparam classAttributeIconSize 0
+class MSFT extends Symbol
+{
+    +MSFT()
+}
+
+abstract class Symbol
+{
+    - history : List<Double>
+    - name : String
+    - historyFile : File
+    + Symbol(String name, File historyFile)
+    + loadHistory() : void
+    + priceAtTick(int tick) : double
+    + getName() : String
+}
+
+
+note left of MSFT: Calls super with the name of the symbol (MSFT)\r\nand the path to the relevant CSV file.
+note left of Symbol: **priceAtTick** will become\nrelevant in the last task
+@enduml

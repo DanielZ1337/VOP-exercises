@@ -1,0 +1,26 @@
+@startuml Order
+skinparam classAttributeIconSize 0
+class Order {
+    - units : int
+    - symbol : Symbol
+    - pricePerUnit : double
+    - status : OrderStatus = OrderStatus.Placed
+    ..getters..
+    + getUnits() : int
+    + getSymbol() : Symbol
+    + getPricePerUnit() : double
+    ..setters..
+    + setStatus(status : OrderStatus)
+}
+
+enum OrderStatus
+{
+    Placed
+    Fulfilled
+    Rejected
+}
+
+note top of Order : New orders will automatically get the "Placed" status when created.
+
+Order ..> OrderStatus
+@enduml

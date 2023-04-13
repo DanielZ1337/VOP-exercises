@@ -1,0 +1,21 @@
+@startuml Account
+skinparam classAttributeIconSize 0
+
+class Account implements OpenForOrdersCallbackInterface
+{
+    - name : String
+    - balance : double = 100_000d
+    - equities : Map<Symbol,Integer>
+    + Account(name : String)
+    + getBalance() : double
+    + getEquities() : Map<Symbol,Integer>
+    + buy(symbol : Symbol, units : int)
+    + updateBalance(order : Order) : void
+    + {abstract} openForOrders() : void
+}
+
+interface OpenForOrdersCallbackInterface
+{
+    openForOrders() : void
+}
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+(*)  -down> "Gets order"
+If "Check status" then
+  -> [Status is <b>not</b> Fulfilled] (*)
+else
+  -left->[Status <b>is</b> Fulfilled] "Calculate the total price for the order\n<b>Hint:</b> pricePerUnit * units"
+  -down> "Update the account balance based on the calculation"
+  -down> "Update the equities map"
+  If "if Equities-Map contains symbol (key)" then
+    -down->[Contains symbol] "Get amount already owned of the symbol"
+    -down> "Add amount of bought symbols"
+    -> "Store the new amount of owned\nsymbols in the equities map on\nthe correct symbol"
+  else
+    -> [Don't contain symbol] "Store the new amount of owned\nsymbols in the equities map on\nthe correct symbol"
+  endif
+  ->(*)
+endif
+@enduml

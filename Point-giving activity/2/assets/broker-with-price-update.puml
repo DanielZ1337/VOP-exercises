@@ -1,0 +1,17 @@
+@startuml Broker
+skinparam classAttributeIconSize 0
+class Broker
+{
+    -**priceUpdateSubscribers : List<PriceUpdateCallbackInterface>**
+    +**addPriceUpdateSubscriber(subscriber : PriceUpdateCallbackInterface)**
+}
+
+interface PriceUpdateCallbackInterface
+{
+    **priceUpdate(tick : int) : void**
+}
+
+Broker --> PriceUpdateCallbackInterface : Each subscriber is notified\nwhen a price update occurs.
+
+note left of PriceUpdateCallbackInterface : Use the **tick** parameter to retrieve the price\nfrom the Symbol's priceAtTick(tick) method
+@enduml

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="602px" preserveAspectRatio="none" style="width:1078px;height:602px;background:#FFFFFF;" version="1.1" viewBox="0 0 1078 602" width="1078px" zoomAndPan="magnify"><defs/><g><!--MD5=[76166a2521bbf4ff86fc82f9ee148dcb]
+class MSFT--><g id="elem_MSFT"><rect codeLine="2" fill="#F1F1F1" height="128.9766" id="MSFT" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="140" x="722" y="460"/><ellipse cx="752.9" cy="492" fill="#ADD1B2" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M757.8463,504.2861 Q756.6842,504.8838 755.4059,505.1826 Q754.1275,505.4814 752.7164,505.4814 Q747.7027,505.4814 745.0631,502.1777 Q742.4234,498.874 742.4234,492.6318 Q742.4234,486.373 745.0631,483.0693 Q747.7027,479.7656 752.7164,479.7656 Q754.1275,479.7656 755.4225,480.0645 Q756.7174,480.3633 757.8463,480.9609 L757.8463,486.4063 Q756.5846,485.2441 755.3976,484.7046 Q754.2105,484.165 752.9488,484.165 Q750.2594,484.165 748.8897,486.2983 Q747.5201,488.4316 747.5201,492.6318 Q747.5201,496.8154 748.8897,498.9487 Q750.2594,501.082 752.9488,501.082 Q754.2105,501.082 755.3976,500.5425 Q756.5846,500.0029 757.8463,498.8408 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="74" x="781.1" y="502.582">MSFT</text><line style="stroke:#181818;stroke-width:1.0;" x1="724" x2="860" y1="524" y2="524"/><line style="stroke:#181818;stroke-width:1.0;" x1="724" x2="860" y1="540" y2="540"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="116" x="734" y="575.0703">+MSFT()</text></g><!--MD5=[9ca48261ea57514906883625ea0cbf93]
+class Symbol--><g id="elem_Symbol"><rect codeLine="7" fill="#F1F1F1" height="326.8359" id="Symbol" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="546" x="519" y="14"/><ellipse cx="733.5" cy="46" fill="#A9DCDF" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M733.2266,36.6963 L730.9189,46.8398 L735.5508,46.8398 Z M730.2383,32.2139 L736.2314,32.2139 L742.9219,57 L738.0244,57 L736.4971,50.874 L729.9395,50.874 L728.4453,57 L723.5479,57 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" font-style="italic" lengthAdjust="spacing" textLength="100" x="774.5" y="56.582">Symbol</text><line style="stroke:#181818;stroke-width:1.0;" x1="521" x2="1063" y1="78" y2="78"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="322" x="531" y="113.0703">-history : List&lt;Double&gt;</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="198" x="531" y="146.0469">-name : String</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="230" x="531" y="179.0234">-historyFile : File</text><line style="stroke:#181818;stroke-width:1.0;" x1="521" x2="1063" y1="192.9297" y2="192.9297"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="522" x="531" y="228">+Symbol(String name, File historyFile)</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="280" x="531" y="260.9766">+loadHistory() : void</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="408" x="531" y="293.9531">+priceAtTick(int tick) : double</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="270" x="531" y="326.9297">+getName() : String</text></g><g id="elem_GMN5"><path d="M12,483 L12,564.2422 A0,0 0 0 0 12,564.2422 L652,564.2422 A0,0 0 0 0 652,564.2422 L652,532 L721.28,524 L652,516 L652,503 L632,483 L12,483 A0,0 0 0 0 12,483 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><path d="M632,483 L632,503 L652,503 L632,483 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="598" x="24" y="518.1367">Calls super with the name of the symbol (MSFT)</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="460" x="24" y="548.7578">and the path to the relevant CSV file.</text></g><!--MD5=[0cb2226f7dd805669cbd8ec536202411]
+reverse link Symbol to MSFT--><g id="link_Symbol_MSFT"><path d="M792,382.16 C792,409.98 792,436.64 792,459.08 " fill="none" id="Symbol-backto-MSFT" style="stroke:#181818;stroke-width:2.0;"/><polygon fill="none" points="778,382.96,792,342.96,806,382.96,778,382.96" style="stroke:#181818;stroke-width:2.0;"/></g><!--MD5=[8ddb0c125f630896418d4a0996dea07d]
+@startuml Symbol Class Diagram
+skinparam classAttributeIconSize 0
+class MSFT extends Symbol
+{
+    +MSFT()
+}
+
+abstract class Symbol
+{
+    - history : List<Double>
+    - name : String
+    - historyFile : File
+    + Symbol(String name, File historyFile)
+    + loadHistory() : void
+    + priceAtTick(int tick) : double
+    + getName() : String
+}
+
+
+note left of MSFT: Calls super with the name of the symbol (MSFT)\r\nand the path to the relevant CSV file.
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>

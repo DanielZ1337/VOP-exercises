@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="472px" preserveAspectRatio="none" style="width:852px;height:472px;background:#FFFFFF;" version="1.1" viewBox="0 0 852 472" width="852px" zoomAndPan="magnify"><defs/><g><!--MD5=[bc5cfb6f659265949d29b23f39cdf5e7]
+class Broker--><g id="elem_Broker"><rect codeLine="2" fill="#F1F1F1" height="194.9297" id="Broker" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="378" x="14" y="14"/><ellipse cx="149.5" cy="46" fill="#ADD1B2" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M154.4463,58.2861 Q153.2842,58.8838 152.0059,59.1826 Q150.7275,59.4814 149.3164,59.4814 Q144.3027,59.4814 141.6631,56.1777 Q139.0234,52.874 139.0234,46.6318 Q139.0234,40.373 141.6631,37.0693 Q144.3027,33.7656 149.3164,33.7656 Q150.7275,33.7656 152.0225,34.0645 Q153.3174,34.3633 154.4463,34.9609 L154.4463,40.4063 Q153.1846,39.2441 151.9976,38.7046 Q150.8105,38.165 149.5488,38.165 Q146.8594,38.165 145.4897,40.2983 Q144.1201,42.4316 144.1201,46.6318 Q144.1201,50.8154 145.4897,52.9487 Q146.8594,55.082 149.5488,55.082 Q150.8105,55.082 151.9976,54.5425 Q153.1846,54.0029 154.4463,52.8408 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="90" x="190.5" y="56.582">Broker</text><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="390" y1="78" y2="78"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="390" y1="94" y2="94"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" text-decoration="underline" textLength="290" x="26" y="129.0703">+getBroker() : Broker</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="354" x="26" y="162.0469">+buy(order : Order) : void</text><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="262" x="26" y="195.0234">+isBusy() : boolean</text></g><!--MD5=[ed818817f21039c8ca945aa1b3877a09]
+class BrokerBusyException--><g id="elem_BrokerBusyException"><rect codeLine="9" fill="#F1F1F1" height="96" id="BrokerBusyException" rx="5" ry="5" style="stroke:#181818;stroke-width:1.0;" width="352" x="27" y="362"/><ellipse cx="57" cy="394" fill="#D94321" rx="22" ry="22" style="stroke:#181818;stroke-width:2.0;"/><path d="M66.0215,407 L60.958,407 L56.2266,398.7988 L51.5117,407 L46.4482,407 L53.7197,394.416 L46.6475,382.2139 L51.7109,382.2139 L56.2266,390.0996 L60.7588,382.2139 L65.8223,382.2139 L58.7832,394.416 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="288" x="85" y="404.582">BrokerBusyException</text><line style="stroke:#181818;stroke-width:1.0;" x1="29" x2="377" y1="426" y2="426"/><line style="stroke:#181818;stroke-width:1.0;" x1="29" x2="377" y1="442" y2="442"/></g><!--MD5=[20518d76fbd47cbdb46f10a13ce35bc7]
+link Broker to BrokerBusyException--><g id="link_Broker_BrokerBusyException"><path codeLine="13" d="M203,208.78 C203,255.12 203,309.28 203,349.42 " fill="none" id="Broker-to-BrokerBusyException" style="stroke:#181818;stroke-width:2.0;"/><polygon fill="#181818" points="203,359.4,211,341.4,203,349.4,195,341.4,203,359.4" style="stroke:#181818;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacing" textLength="632" x="205" y="295.1367">throws when buy() is called and the broker is busy</text></g><!--MD5=[78e0bdf245e53556e95d59e2acb72dec]
+@startuml Broker
+skinparam classAttributeIconSize 0
+class Broker
+{
+    +{static} getBroker() : Broker
+    +buy(order : Order) : void
+    +isBusy() : boolean
+}
+
+exception BrokerBusyException
+{
+}
+
+Broker - -> BrokerBusyException : throws when buy() is called and the broker is busy
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>

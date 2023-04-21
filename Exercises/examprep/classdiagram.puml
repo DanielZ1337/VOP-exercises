@@ -1,0 +1,100 @@
+@startuml LaundroMat
+skinparam classAttributeIconSize 0
+
+package laundry_facade
+{
+    class LaundrySingleton
+    {
+        -instance : LaundrySingleton = null
+        -laundryMachines: List<LaundryMachine>
+        -LaundrySingleton()
+        +getInstance(): LaundrySingleton
+        +toString(): String
+        +getMachine(index : int) : LaundryMachine
+        +getPrice(machine : int) : double
+        +getProgName(machine : int) : String
+        +buildLaundry() : void
+        +main(args : String[]) : void
+    }
+
+    interface LaundryMachine
+    {
+        +getModel() : String
+        +getPrice() : double
+        +getProgName(prog : int) : String
+    }
+
+    interface LaundryConstants
+    {
+        WACH_6 : String = "6 Kg Wash"
+        WACH_12 : String = "12 Kg Wash"
+        TUMBLE : String = "Tumbler"
+        TUMBLE_PRICE : double = 1.25
+        WASH_PROGRAM_1 : String = "95 Normal"
+        WASH_PROGRAM_2 : String = "60 Normal"
+        WASH_PROGRAM_3 : String = "40 Normal"
+        WASH_PROGRAM_4 : String = "30 Mild"
+        WASH_PROGRAM_5 : String = "40 Non-iron"
+        WASH_PROGRAM_6 : String = "60 Non-iron"
+        WASH_PROGRAM_7 : String = "Wool"
+        WASH_PRICE_1 : double = 42.00
+        WASH_PRICE_2 : double = 37.50
+        WASH_PRICE_3 : double = 33.50
+        WASH_PRICE_4 : double = 30.00
+        WASH_PRICE_5 : double = 35.00
+        WASH_PRICE_6 : double = 39.50
+        WASH_PRICE_7 : double = 28.00
+        FACTOR_12 : double = 1.5
+        PROGS : String[] = {
+            WASH_PROGRAM_1, 
+        WASH_PROGRAM_2,
+        WASH_PROGRAM_3,
+        WASH_PROGRAM_4,
+        WASH_PROGRAM_5,
+        WASH_PROGRAM_6,
+        WASH_PROGRAM_7}
+    }
+
+    class WashProgram
+    {
+        -name : String
+        -price : double
+        +WashProgram(name : String, price : double)
+        +getName() : String
+        +getPrice() : double
+        +toString() : String
+    }
+
+    class WashingMachine
+    {
+        -model : String
+        -progMap : Map<Integer, WashProgram>
+        +WashingMachine(model : String)
+        +addProgram(code : int, name : String, price : double) : void
+        +getModel() : String
+        +getPrice(prog : int) : double
+        +getProgName(prog : int) : double
+        +toString() : String
+
+    }
+
+    class TumbleDryer
+    {
+        -model : String
+        -pricePerUnit : double
+        +TumbleDryer(model : String)
+        +getModel() : String
+        +setPrice(pricePermInute : double) : void
+        +getPrice(minutes : int) : double
+        +toString() : String
+        +getProgName(prog : int) : String
+    }
+}
+
+LaundrySingleton --> LaundryMachine
+LaundrySingleton --> LaundrySingleton
+LaundryConstants <|- LaundrySingleton
+LaundryMachine <|-- TumbleDryer
+LaundryMachine <|-- WashingMachine
+WashProgram <--o WashingMachine : mapValue
+@enduml
